@@ -5,6 +5,8 @@
     box-sizing: border-box;
 }
 body{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
     background-image: linear-gradient(rgb(116, 132, 185), rgb(110, 143, 180), rgb(186, 186, 199));
 }
 main{
@@ -27,6 +29,7 @@ main{
 .containner2{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     border: 2px solid grey;
     border-radius: 0.4rem;
     margin: auto;
@@ -46,8 +49,44 @@ main{
 }
 
 .operators, .number {
-    border:  1px solid black;
+    /* border:  1px solid black; */
     border-radius: 0.4rem;
     height: 10px;
 
+}
+.number{
+    height: 96%;
+    width: 58%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    flex-wrap: wrap;
+
+}
+.dig{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width:  30px;
+    height: 30px;
+    /* border: 2px solid rgb(167, 64, 64); */
+}
+.dig2{
+    grid-template-columns: 2fr;
+}
+button{
+    display: block;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+    width:  30px;
+    height: 30px;
+}
+
+.operators{
+    height: 96%;
+    width: 35%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
