@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 40vw;
+    height: fit-content;
+    border: 2px solid grey;
+    border-radius: 1rem;
+    
+}
