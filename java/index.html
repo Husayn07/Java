@@ -10,22 +10,24 @@
   <body>
     <main>
       <div class="containner">
-        <div class="display"></div>
+        <div class="display">
+          <h1 id="scr"></h1>
+        </div>
 
         <div class="containner2">
           <div class="number">
-            <div class="dig"><button>1</button></div>
-            <div class="dig"><button>2</button></div>
-            <div class="dig"><button>3</button></div>
-            <div class="dig"><button>4</button></div>
-            <div class="dig"><button>5</button></div>
-            <div class="dig"><button>6</button></div>
-            <div class="dig"><button>7</button></div>
-            <div class="dig"><button>8</button></div>
-            <div class="dig"><button>9</button></div>
-            <div class="dig"><button>.</button></div>
-            <div class="dig2"><button>0</button></div>
-            <div class="dig2"><button>00</button></div>
+            <div class="dig"><button onclick="scr.innerHTML += '1'">1</button></div>
+            <div class="dig"><button onclick="scr.innerHTML += 2">2</button></div>
+            <div class="dig"><button onclick="scr.innerHTML += 3" >3</button></div>
+            <div class="dig"><button onclick="scr.innerHTML += 4" >4</button></div>
+            <div class="dig"><button onclick="scr.innerHTML += 5">5</button></div>
+            <div class="dig"><button onclick="scr.innerHTML += 6">6</button></div>
+            <div class="dig"><button onclick="scr.innerHTML += 7">7</button></div>
+            <div class="dig"><button onclick="scr.innerHTML += 8">8</button></div>
+            <div class="dig"><button onclick="scr.innerHTML += 9">9</button></div>
+            <div class="dig"><button onclick="scr.innerHTML += .">.</button></div>
+            <div class="dig2"><button onclick="scr.innerHTML += 0">0</button></div>
+            <div class="dig2"><button onclick="scr.innerHTML = ">A/C</button></div>
 
           </div>
           <div class="operators">
