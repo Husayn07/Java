@@ -11,7 +11,7 @@
     <main>
       <div class="containner">
         <div class="display">
-          <h1 id="scr"></h1>
+          <h1 id="scr" ></h1>
         </div>
 
         <div class="containner2">
@@ -25,21 +25,24 @@
             <div class="dig"><button onclick="scr.innerHTML += 7">7</button></div>
             <div class="dig"><button onclick="scr.innerHTML += 8">8</button></div>
             <div class="dig"><button onclick="scr.innerHTML += 9">9</button></div>
-            <div class="dig"><button onclick="scr.innerHTML += .">.</button></div>
+            <!-- <div class="dig"><button onclick="scr.innerHTML += .">.</button></div> -->
             <div class="dig2"><button onclick="scr.innerHTML += 0">0</button></div>
-            <div class="dig2"><button onclick="scr.innerHTML = ">A/C</button></div>
+            <div class="dig2"><button onclick="scr.innerHTML = ''">A/C</button></div>
 
           </div>
           <div class="operators">
-            <div class="ope"><button>-</button></div>
+            <div class="ope" onclick="scr.innerHTML += '-'"><button>-</button></div>
             <div class="ope"><button>+</button></div>
             <div class="ope"><button>/</button></div>
             <div class="ope"><button>*</button></div>
             <div class="ope"><button>%</button></div>
-            <div class="ope"><button>=</button></div>
+            <div class="ope"><button onclick="scr.innerHTML += evaluate()">=</button></div>
           </div>
         </div>
       </div>
     </main>
+    <script src="/java/java.js">
+    
+    </script>
   </body>
 </html>
